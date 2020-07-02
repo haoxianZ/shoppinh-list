@@ -21,7 +21,7 @@ $(function(){
     $('ul').on('click',".shopping-item-toggle", function(event){
         var compelteItem = $(this).parent().parent().find('.shopping-item')
         console.log(compelteItem)
-        $(this).parent().parent().find('.shopping-item').addClass('shopping-item__checked');
+        $(this).parent().parent().find('.shopping-item').toggleClass('shopping-item__checked');
     })
     //now for the delete click //
     $('ul').on('click', ".shopping-item-delete", function(event){
